@@ -1,5 +1,5 @@
 ﻿// This program calculates the numeric grade based on category weights. Then it calculates the letter grade based on the numeric grade.
-//Both the numeric and letter grades are outputted on the html page.
+//Both the numeric and letter grades are outputted on the html page. One is sent to an alert and one is printed on the form.
 
 $("#btnSend").click(function () {
     var grade = 0;
@@ -40,10 +40,9 @@ $("#btnSend").click(function () {
         } else {
             letterGrade = "E"
         }
-        alert("Your final grade percentage is " + grade + '\n'
-        + "Your final letter grade is a(n) " + letterGrade)
+        alert("Your final grade percentage is a " + grade + "%")
 
-        document$("#finalGrade").val(letterGrade)
+        $('#finalGrade').text("Final Grade: " + letterGrade);
     }
 
 })
