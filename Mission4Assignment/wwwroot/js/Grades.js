@@ -40,7 +40,7 @@ $("#btnSend").click(function () {
         } else {
             letterGrade = "E"
         }
-        alert("Your final grade percentage is a " + grade + "%")
+        alert("Your final grade percentage is a " + grade + "%");
 
         $('#finalGrade').text("Final Grade: " + letterGrade);
     }
