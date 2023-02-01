@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission4Assignment.Models
 {
+    // This is the model for the Grade Calculator page, which accepts different inputs and outputs grade calculations.
     public class GradeCalculatorModel
     {
         [Required]

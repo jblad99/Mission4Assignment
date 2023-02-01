@@ -9,6 +9,7 @@ namespace Mission4Assignment.Controllers
 {
     public class BlahController : Controller
     {
+        // This program sets up all the routes and methods for the different pages.
         public IActionResult Index()
         {
             return View();

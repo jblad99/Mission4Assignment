@@ -29,6 +29,7 @@ namespace Mission4Assignment
 
             app.UseStaticFiles();
 
+            //Allows the app to use routing and endpoints, so I can use the controller and other pieces of the MVC model
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

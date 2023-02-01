@@ -5,32 +5,34 @@
 }
 
 @model GradeCalculatorModel;
-<!--Form takes grade inputs and sends them to Grades.js-->
-<h2>Grade Calculator</h2>
-<form method="post">
-    <label>Assignments:</label>
-    <input id="assignments" asp-for="Assignments" /><br />
+    <!--This page allows someone to input their individual grades and determine their overall letter and percentage grade.-->
+    <!--Form takes grade inputs and sends them to Grades.js-->
+    <h2>Grade Calculator</h2>
+    <form method="post">
+        <label>Assignments:</label>
+        <!--Data validation is included-->
+        <input id="assignments" asp-for="Assignments" /><br />
 
-    <label>Group Project:</label>
-    <input id="group" asp-for="Group" /><br />
+        <label>Group Project:</label>
+        <input id="group" asp-for="Group" /><br />
 
-    <label>Quizzes:</label>
-    <input id="quizzes" asp-for="Quizzes" /><br />
+        <label>Quizzes:</label>
+        <input id="quizzes" asp-for="Quizzes" /><br />
 
-    <label>Midterm Exam:</label>
-    <input id="midterm" asp-for="Midterm" /><br />
+        <label>Midterm Exam:</label>
+        <input id="midterm" asp-for="Midterm" /><br />
 
-    <label>Final Exam:</label>
-    <input id="final" asp-for="Final" /><br />
+        <label>Final Exam:</label>
+        <input id="final" asp-for="Final" /><br />
 
-    <label>INTEX:</label>
-    <input id="intex" asp-for="Intex" /><br />
+        <label>INTEX:</label>
+        <input id="intex" asp-for="Intex" /><br />
 
-    <label id="finalGrade"></label>
-    <br />
+        <label id="finalGrade"></label>
+        <br />
 
-    <button id="btnSend" type="submit">Submit</button><br />
+        <button id="btnSend" type="submit">Submit</button><br />
 
-    <div asp-validation-summary="All"></div>
+        <div asp-validation-summary="All"></div>
 
-</form>
+    </form>
